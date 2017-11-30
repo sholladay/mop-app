@@ -8,27 +8,22 @@ const mopButton = document.querySelector('#mop');
 const par = document.querySelector('#output');
 console.log(par);
 mopButton.addEventListener('click', async () => {
-	// console.log(process.versions);
-    // console.log('cwd:', process.cwd());
     const projects = await mop({
         rule: {
             'caret-deps': 'warn'
         }
+    })
+    const problemss = projects.map(project => {
+        const path = project.path;
+        return path;
     });
-    const output = projects.map((project) => {
-        let pp = document.createElement('p');
-        return pp.textContent = project.path;
+    const paths = problemss.map(path => {
+        const par = document.createElement('p');
+        par.textContent = path;
+        return par;
     });
-
-    const output = projects.map((project) => {
-        let pp = document.createElement('p');
-        return pp.textContent = project.path;
-    });
-
-    console.log(output)
-
-    // output.map(par => {
-
-    // })
-    par.textContent = output
-    });
+    console.log(paths);
+    paths.forEach(path => {
+        par.appendChild(path);
+    })
+    })
