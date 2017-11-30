@@ -1,0 +1,44 @@
+{
+  "name": "electron",
+  "productName": "Electron",
+  "version": "0.0.0",
+  "description": "My shining app",
+  "license": "MIT",
+  "repository": "venikman/electron",
+  "author": {
+    "name": "Stan",
+    "email": "nedbailov375426@gmail.com",
+    "url": "nedbailov.com"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "files": [
+    "index.js",
+    "index.html",
+    "index.css"
+  ],
+  "keywords": [
+    "electron-app",
+    "electron"
+  ],
+  "dependencies": {
+    "electron-debug": "^1.0.0",
+    "mop-cli": "^0.3.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.8.2-beta.2",
+    "xo": "^0.16.0"
+  },
+  "xo": {
+    "esnext": true,
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
