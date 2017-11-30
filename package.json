@@ -30,12 +30,13 @@
   },
   "devDependencies": {
     "devtron": "^1.1.0",
-    "electron-packager": "^8.0.0",
     "electron": "^1.8.2-beta.2",
-    "xo": "^0.16.0"
+    "electron-packager": "^8.0.0",
+    "eslint-config-tidy": "^0.5.0",
+    "xo": "^0.18.2"
   },
   "xo": {
-    "esnext": true,
+    "extend": "tidy",
     "envs": [
       "node",
       "browser"
