@@ -1,45 +1,78 @@
 {
-  "name": "electron",
-  "productName": "Electron",
-  "version": "0.0.0",
-  "description": "My shining app",
-  "license": "MIT",
-  "repository": "venikman/electron",
-  "author": {
-    "name": "Stan",
-    "email": "nedbailov375426@gmail.com",
-    "url": "nedbailov.com"
-  },
-  "scripts": {
-    "test": "xo",
-    "start": "electron .",
-    "build": "electron-packager . --out=dist --asar --overwrite --all"
-  },
-  "files": [
-    "index.js",
-    "index.html",
-    "index.css"
-  ],
-  "keywords": [
-    "electron-app",
-    "electron"
-  ],
-  "dependencies": {
-    "electron-debug": "^1.0.0",
-    "mop-cli": "^0.3.0"
-  },
-  "devDependencies": {
-    "devtron": "^1.1.0",
-    "electron": "^1.8.2-beta.2",
-    "electron-packager": "^8.0.0",
-    "eslint-config-tidy": "^0.5.0",
-    "xo": "^0.18.2"
-  },
-  "xo": {
-    "extend": "tidy",
-    "envs": [
-      "node",
-      "browser"
-    ]
-  }
+    "name": "mop-app",
+    "productName": "Mop",
+    "version": "0.0.0",
+    "description": "Lint and maintain many projects at once",
+    "homepage": "https://github.com/sholladay/mop-app",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo",
+        "start": "electron .",
+        "build": "electron-packager . --out=build --asar --overwrite --all"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/mop-app.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/mop-app/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=8"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js",
+        "index.html",
+        "index.css"
+    ],
+    "dependencies": {
+        "electron-debug": "^1.0.0",
+        "mop-cli": "^0.3.0"
+    },
+    "devDependencies": {
+        "devtron": "^1.1.0",
+        "electron": "^1.8.2-beta.2",
+        "electron-packager": "^8.0.0",
+        "eslint-config-tidy": "^0.5.0",
+        "xo": "^0.18.0"
+    },
+    "keywords": [
+        "app",
+        "gui",
+        "electron-app",
+        "electron",
+        "lint",
+        "maintain",
+        "maintenance",
+        "orchestrate",
+        "automate",
+        "manage",
+        "cleanup",
+        "lots",
+        "many",
+        "multiple",
+        "modules",
+        "packages",
+        "projects",
+        "dev",
+        "develop",
+        "development",
+        "tooling",
+        "tools",
+        "tool"
+    ],
+    "xo": {
+        "extend": "tidy",
+        "env": [
+            "node",
+            "browser"
+        ]
+    }
 }
