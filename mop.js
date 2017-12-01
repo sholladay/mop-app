@@ -5,25 +5,21 @@
 const mop = require('mop-cli');
 
 const mopButton = document.querySelector('#mop');
-const par = document.querySelector('#output');
-console.log(par);
+const out = document.querySelector('#output');
+console.log(out);
 mopButton.addEventListener('click', async () => {
     const projects = await mop({
-        rule: {
-            'caret-deps': 'warn'
+        rule : {
+            'caret-deps' : 'warn'
         }
-    })
-    const problemss = projects.map(project => {
-        const path = project.path;
-        return path;
     });
-    const paths = problemss.map(path => {
-        const par = document.createElement('p');
-        par.textContent = path;
-        return par;
+    const problems = projects.map((project) => {
+        const pg = document.createElement('p');
+        pg.textContent = project.path;
+        return pg;
     });
-    console.log(paths);
-    paths.forEach(path => {
-        par.appendChild(path);
-    })
-    })
+    console.log(problems);
+    problems.forEach((problem) => {
+        out.appendChild(problem);
+    });
+});

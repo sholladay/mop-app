@@ -12,7 +12,7 @@
     },
     "scripts": {
         "test": "xo",
-        "start": "electron .",
+        "start": "electron --js-flags='--harmony' .",
         "build": "electron-packager . --out=build --asar --overwrite --all"
     },
     "repository": {
@@ -73,6 +73,9 @@
         "env": [
             "node",
             "browser"
-        ]
+        ],
+        "rule": {
+            "id-match": ["error", "^_?[a-zA-Z_$][a-zA-Z\\d]*$"]
+        }
     }
 }
