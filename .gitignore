@@ -4,3 +4,4 @@ node_modules
 
 # Build artifacts are unique to each developer
 build
+dist
