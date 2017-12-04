@@ -1,12 +1,8 @@
-html,
-body {
-	padding: 0;
-	margin: 0;
-}
-
-body {
-	font-family: -apple-system, 'Helvetica Neue', Helvetica, sans-serif;
-	background-color: lightgray;
+:root {
+    background: var(--nd-gray-dark);
+    color: var(--nd-yellow);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
 }
 #output {
 	text-align: center;
@@ -15,11 +11,11 @@ body {
 #mop {
 	margin: 0 auto;
 	display: block;
-	width: 100px;
-	height: 75px;
+	width: 5rem;
+	height: 3.75rem;
 	text-align: center;
-	font-style: 40px;
-	border-radius: 5px;
+	font-style: 2rem;
+	border-radius: 0.25rem;
 	border: 1px solid green;
 	font-family: inherit;
 	outline: none;
