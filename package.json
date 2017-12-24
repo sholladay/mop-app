@@ -11,7 +11,7 @@
         "email": "me@seth-holladay.com"
     },
     "scripts": {
-        "test": "xo",
+        "test": "xo && ava",
         "start": "electron --js-flags='--harmony' .",
         "build": "electron-packager . --out=build --asar --overwrite --all"
     },
@@ -38,6 +38,7 @@
     },
     "devDependencies": {
         "devtron": "^1.1.0",
+        "ava": "^0.24.0",
         "electron": "^1.8.2-beta.2",
         "electron-packager": "^8.0.0",
         "eslint-config-tidy": "^0.5.0",
@@ -75,7 +76,10 @@
             "browser"
         ],
         "rule": {
-            "id-match": ["error", "^_?[a-zA-Z_$][a-zA-Z\\d]*$"]
+            "id-match": [
+                "error",
+                "^_?[a-zA-Z_$][a-zA-Z\\d]*$"
+            ]
         }
     }
 }
